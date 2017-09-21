@@ -57,13 +57,19 @@ int millis() {
 
 
 int main() {
+  int grade=0;
   Serial = Cereal();
   setup();
-
+  
   loop();
-
-  cout << "The output was:\n";
-  cout << all_prints;
+  if (baud_rate_setting==9600){
+	  grade=grade+20;
+  }
+  if (all_prints=="1234567890123456789012345678900123456789\nthat took "{
+      grade=grade+20;
+  }
+  cout << "Their grade is:\n";
+  cout << grade;
   cout << "\nThe baud rate was: \n";
   cout << baud_rate_setting;
 }
