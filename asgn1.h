@@ -63,7 +63,10 @@ int main() {
   
   loop();
   if (baud_rate_setting==9600){
-	  grade=grade+20;
+	  grade=grade+10;
+  }
+  if (baud_rate_setting!=0){
+	  grade=grade+10;
   }
   if (all_prints=="1234567890123456789012345678900123456789\nthat took "{
       grade=grade+20;
